@@ -1,0 +1,41 @@
+<html>
+    <style>
+        table
+        {
+            background-color: rgb(4, 255, 0);
+            border-style: double;
+            border-radius: 20px;
+            color: white;
+        }
+    </style>
+    <center>
+    <h1>World's Best Table Printer</h1>
+    <hr color="Green">
+    <body>
+        <input type="number" id="i1" name="input" placeholder="Enter number here"/>
+        <button onclick="showTables()">Show Tables</button>
+    </center>
+        <br><table id="tb1" align="center" >
+            <tr><th>Number</th>
+                <th>Table</th>
+            </tr>
+        </table>
+    </body>
+
+<script>
+    function showTables()
+    {
+        var num = document.getElementById("i1").value;
+        console.log(num);
+        var row="";
+        for(var i=1;i<=10;i++){
+                var row = tb1.insertRow(i);
+                var cell1 = row.insertCell(0);
+                cell1.innerHTML = num +"*"+ i;
+                var cell2 = row.insertCell(1);
+                cell2.innerHTML = num*i;
+
+            }
+    }
+</script>
+</html>

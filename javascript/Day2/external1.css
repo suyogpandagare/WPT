@@ -1,0 +1,15 @@
+*
+{
+    color: yellowgreen;
+}
+
+.highlight
+{
+    background-color:rgb(39, 71, 7);
+    border-style: ridge;
+}
+
+div
+{
+    font-size: 4em;
+}

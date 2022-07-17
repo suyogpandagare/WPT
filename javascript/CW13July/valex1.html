@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            .error
+            {
+                color: red;
+                font-style: italic;
+                font-family: 'Courier New';
+
+            }
+        </style>
+        <script>
+            function validate()
+            {
+                var user = document.getElementById("ip1").value;
+                //validation criteria---length should be more than 8
+                if(user.length > 8){
+                    document.getElementById("errorname").innerHTML = "";
+                return true;
+                }
+                else{
+                    document.getElementById("errorname").innerHTML = "name should be greater than 8 characters";
+                return false;
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form onsubmit="return validate();">
+            Enter uname: <input type="text" id="ip1" name="uname" oninput="validate()"/>
+            <p id="errorname" class="error"></p>
+            <input type="submit" value="OK" /> 
+   
+        </form>
+    </body>
+</html>

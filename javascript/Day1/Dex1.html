@@ -1,0 +1,23 @@
+<html>
+
+    <body>
+        <input type="text" id="ip1" placeholder="enter name"/>
+        <button onclick="f1()">OK</button>
+        <br />
+        <span id="sp1"></span>
+
+        <script>
+
+            function f1(){
+            var val = document.getElementById("ip1").value;
+            alert("the text in text field is "+val);
+            var element = document.getElementById("sp1")
+            //element.innerText = "<b>Hello and welcone to DOM manipulation</b>"
+            element.innerHTML = "<b>Hello and welcone "+val+" to DOM manipulation</b>"
+            }
+
+          
+        </script>
+        
+    </body>
+</html>

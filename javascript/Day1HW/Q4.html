@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Tables From 1 to 10000</h1>
+        <button onclick="showTables()">Show Tables</button>
+        <table id="tb1" align="center" border="2">
+            <tr><th>Number</th>
+            <th>Square</th></tr>
+        </table>
+    </body>
+    <script>
+        function showTables()
+        {
+                       
+            for(var i=1;i<=100;i++){
+                var row = tb1.insertRow(i);
+                var cell1 = row.insertCell(0);
+                cell1.innerHTML = i;
+                var cell2 = row.insertCell(1);
+                cell2.innerHTML = i*i;
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <script>
+        function f1()
+        {
+            var options="";
+            var states=["Maharashtra","Gujrat","UP","Goa","Karnataka"];
+            for(var i=0;i<=states.length;i++)
+            {
+                options = options+"<option>"+states[i]+"</option>";
+            }
+            document.getElementById("i1").innerHTML = options;
+        }
+        function f2()
+        {
+            var options="";
+            var countries=["India","USA","Europe","Australia","Canada"];
+            for(var i=0;i<=countries.length;i++)
+            {
+                options = options+"<option>"+countries[i]+"</option>";
+            }
+            document.getElementById("i2").innerHTML = options;
+
+
+        }
+    </script>
+    <body>
+        states : <select id="i1"></select>
+        <input type="radio" name="a1" id="r1" onclick="f1()" /><br>
+        countries : <select id="i2"></select>
+        <input type="radio" name="a1" id="r2" onclick="f2()" />
+    </body>
+</html>

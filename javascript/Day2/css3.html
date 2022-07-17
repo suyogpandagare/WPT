@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Internal CSS Example-ID based selectors</title>
+        <style>
+            #d1 /*match all tags that have id d1*/
+            {
+                border-style: double;
+            }
+
+            #d1,#d2 /*match all tags that have id d1 or d2*/
+            {
+                background-color: blue;
+            }
+
+            #d1 #d2  /*match all tags that have id d2 inside id d1 or nested in d1 id tag*/
+            {
+                background-color: tomato;
+            }
+
+            div#d1 /*match all div tags that have id d1*/
+            {
+                background-color: yellow;
+            }
+            
+        </style>
+    </head>
+    <div id="d1">
+        This is div with id=d1
+    </div>
+    <div id="d2">
+        This is div with id=d2
+    </div>
+    <p  id="d1">This is para with id=d1</p>
+    <div id="d1">
+        <div id="d2">This is a d2 div inside the d1 div</div>
+    </div>
+</html>

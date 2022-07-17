@@ -1,0 +1,31 @@
+<html>
+<script>
+    function validateuname()
+    {
+        let user = document.getElementById("ip1").value;
+
+        //validation criteria--size>8,uname should not be blank,no spaces in between
+    }
+
+    function validatepwd()
+    {
+        let pwd = document.getElementById("p1").value;
+
+        //validation criteria--size>8 <15,uname should not be blank,no spaces in between,must have 1 digit,1 special char,1 uppercase,1 lowercase,1st char must not be digit or special char
+
+        if(user.trim.length > 8){
+            if()
+        }
+
+
+    }
+</script>
+<body>
+    <form >
+        Enter uname : <input type="text" name="uname" id="ip1" placeholder="enter username" oninput="validateuname()" /><br>
+        Enter password : <input type="text" name="pwd" id="p1" placeholder="enter password" oninput="validatepwd()" /><br>
+        <input type="submit" value="Login" />
+ 
+    </form>
+</body>
+</html>

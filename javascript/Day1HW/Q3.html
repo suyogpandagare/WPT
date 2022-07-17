@@ -1,0 +1,28 @@
+<html>
+    <body>
+        
+        <table id="tb1" align="center" border="2">
+            <tr><th>Text Entered </th></tr>
+
+        </table>
+
+        <div id="d1">
+        <input type="text" id="i1" placeholder="Enter Text Here" />
+        <button onclick="add()">Add Text</button>
+
+        </div>
+
+    </body>
+    <script>
+        function add()
+        {
+            var i = 1;
+            var row = tb1.insertRow(i);
+            var cell1 = row.insertCell(0);
+            var enteredText = document.getElementById("i1").value;
+
+            cell1.innerHTML = enteredText;
+
+        }
+    </script>
+</html>

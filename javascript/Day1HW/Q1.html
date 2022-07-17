@@ -1,0 +1,26 @@
+<html>
+    
+    <body><center>
+       <b> Show Poem </b>: <input  type="checkbox" id="q1" name="poem" onclick="f1()" />
+        <span id="s1"></span>
+    </center>
+    </body>
+    <script>
+        function f1()
+        {
+          
+             var res = document.getElementById("q1");
+           
+             var element = document.getElementById("s1");
+             console.log(res.checked);
+             if(res.checked){
+                
+                element.innerHTML = "<br><h2><i>twinkle twinkle little star</i></h2><h2><i>how i wonder what u are</i><h2>";
+                
+             }
+             else{
+                element.innerHTML="";
+             }
+        }
+    </script>
+</html>

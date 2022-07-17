@@ -1,0 +1,32 @@
+<html>
+    <script>
+        function primeOrNot()
+        {
+            var num ,i,flag=true;
+            num = parseInt(document.myCalc.num.value);
+            for(i=2;i<=num-1;i++){
+                if(num%i==0){
+                    flag=false;
+                    break;
+                }
+            }
+                if(flag==true){
+                    alert(num + " is prime");
+                }
+                else{
+                    alert(num+" is not prime")
+                }
+            
+        }
+    </script>
+    <body>
+        <center>
+        <h1>Prime Or Not Calculator</h1>
+        <form name="myCalc">
+        <hr color="Green">
+        <input type="text" name="num" value="" placeholder="Enter a Number" />
+        <br><input type="button" value="Check Prime" onclick="primeOrNot()" />
+        <br></form>
+    </center>
+    </body>
+</html>
