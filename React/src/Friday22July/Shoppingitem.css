@@ -1,0 +1,9 @@
+.item
+{
+    border: 2px;
+    border-radius: 5px;
+    border-color: brown;
+    border-style: solid;
+    width: fit-content;
+    height: fit-content;
+}
